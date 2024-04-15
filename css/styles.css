@@ -1,0 +1,109 @@
+:root {
+    --main-black: #000;
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*, ::before. ::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: block;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+.nav {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+}
+
+.menu__list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+ul, li {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+}
+
+.menu__list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+    /* Menú */
+    
+    /*title*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+    
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+    }
+    
+    /*Mobile*/
+    @media (min-width: 425px) {
+    
+    /*Menu*/
+    
+    /*Titulo*/
+    
+    /*Sección sobre mi*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+     
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+     /*Contacto*/
+    
+    /*Footer*/
+    
+    }
