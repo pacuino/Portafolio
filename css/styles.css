@@ -144,13 +144,15 @@ h2 {
 .project-image {
     height: calc(100% - 6.8rem);
     width: 100%;
-    object-fit: scale-down;
+    object-fit: cover;
 }
 
 img {
     display: block;
-    wi
+    border-radius: 10px 10px 0 0;
 }
+
+
 
 /*Tablet*/
 @media (min-width: 768px) {
