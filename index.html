@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Pacuino</title>
 </head>
 <body>
@@ -14,23 +15,55 @@
         <div class="menu">
             <nav id="navbar" class="nav">
                 <ul class="nav_list">
-                    <li class="nav_list_item"><a href="#sobre-mi">About</a></li>
+                    <li class="nav_list_item"><a href="#about">About</a></li>
                     <li class="nav_list_item"><a href="#skills">Skills</a></li>
                     <!--<li class="nav_list_item"><a href="#hobbies">Hobbies</a></li>-->
                     <li class="nav_list_item"><a href="#formacion">Formación</a></li>
-                    <li class="nav_list_item"><a href="#xp">Proyectos</a></li>
-                    <!--<li class="nav_list_item"><a href="#contacto">frank.senju3@gmail.com</a></li>-->
+                    <li class="nav_list_item"><a href="#projects">Proyectos</a></li>
+                    <li class="nav_list_item"><a href="#contact">Contacto</a></li>
                 </ul>
                 <!--<li class="nav_list_item_contato"><a href="#contacto">frank.senju3@gmail.com</a></li>-->    
             </nav>
         </div>
     </header>
     <!--Welcome Section-->
-    <section class="welcome-section">
+    <section id="about" class="welcome-section">
         <h1>Hola soy Pacuino</h1>
         <p>Front End Especialista</p>
+        <div class="cajaIconos">
+            <div class="icon">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="40" r=35></circle>
+                </svg>
+                <a href="https://www.linkedin.com/in/franciscocortesd" target="_blanck"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+            <div class="icon">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="40" r=35></circle>
+                </svg>
+                <a href="https://github.com/Pacuino" target="_blanck"><i class='bx bxl-github'></i></a>
+            </div> 
+            <div class="icon">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="40" r=35></circle>
+                </svg>
+                <a href="https://twitter.com/pacuino" target="_blanck"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <div class="icon">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="40" r=35></circle>
+                </svg>
+                <i class='bx bxl-youtube' ></i>
+            </div>
+            <div class="icon">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="40" r=35></circle>
+                </svg>
+                <a href="https://www.instagram.com/pacuino" target="_blanck"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
     </section>
-    <section class="projects-section">
+    <section id="projects" class="projects-section">
         <h2 class="projects-title">Aqui algunos de mis proyectos</h2>
         <div class="projects-grid">
             <a href="https://pacuino.github.io/encriptadorDeTexto-Alura/" class="project encriptador" target="_blank">
@@ -45,7 +78,7 @@
                 <img src="img/akiratoriyama2.png" alt="Akira Toriyama" class="project-image">
                 <p class="project-title">
                     <span class="code">&lt</span>
-                    Akira Toriyama
+                    Tribute Page
                     <span class="code">/&gt</span>
                 </p>
             </a>
@@ -81,6 +114,19 @@
                     <span class="code">/&gt</span>
                 </p>
             </a>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Trabajemos juntos...</h2>
+        <p>Como te tomas tu cafe?</p>
+        <div  class="contact-form">
+            <form class="contact-form-form" name="form">
+                <input class="contact-form-input" type="text" name="nombre" placeholder="Nombre">
+                <input class="contact-form-input" type="email" name="email" placeholder="E-mail">
+                <input class="contact-form-input" type="text" name="asunto" placeholder="Assunto">
+                <textarea class="contact-form-textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                <button type="submit" class="contact-form-btn">Enviar mensaje</button>
+            </form>            
         </div>
     </section>
 </body>
