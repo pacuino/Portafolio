@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Pacuino</title>
 </head>
 <body>
+    <!---->
     <header>
         <!-- Sección del Menú  -->
         <div class="menu">
             <nav id="navbar" class="nav">
+                <li class="titulo">Pacuino</li>
                 <ul class="nav_list">
-                    <li class="nav_list_item"><a href="#about">About</a></li>
+                    <li class="nav_list_item"><a href="#welcome-section">Sobre mi</a></li>
                     <li class="nav_list_item"><a href="#skills">Skills</a></li>
-                    <!--<li class="nav_list_item"><a href="#hobbies">Hobbies</a></li>-->
+                    <li class="nav_list_item"><a href="#hobbies">Hobbies</a></li>
                     <li class="nav_list_item"><a href="#formacion">Formación</a></li>
                     <li class="nav_list_item"><a href="#projects">Proyectos</a></li>
                     <li class="nav_list_item"><a href="#contact">Contacto</a></li>
-                </ul>
-                <!--<li class="nav_list_item_contato"><a href="#contacto">frank.senju3@gmail.com</a></li>-->    
+                </ul>    
             </nav>
         </div>
     </header>
     <!--Welcome Section-->
-    <section id="about" class="welcome-section">
+    <section id="welcome-section" class="welcome-section">
         <h1>Hola soy Pacuino</h1>
         <p>Front End Especialista</p>
         <div class="cajaIconos">
@@ -41,13 +41,13 @@
                 <svg heigth="80" width="80">
                     <circle cx="40" cy="40" r=35></circle>
                 </svg>
-                <a href="https://github.com/Pacuino" target="_blanck"><i class='bx bxl-github'></i></a>
+                <a id="profile-link" href="https://github.com/pacuino" target="_blank"><i class='bx bxl-github'></i></a>
             </div> 
             <div class="icon">
                 <svg heigth="80" width="80">
                     <circle cx="40" cy="40" r=35></circle>
                 </svg>
-                <a href="https://twitter.com/pacuino" target="_blanck"><i class='bx bxl-twitter'></i></a>
+                <a href="https://twitter.com/pacuino" target="_blank"><i class='bx bxl-twitter'></i></a>
             </div>
             <div class="icon">
                 <svg heigth="80" width="80">
@@ -59,14 +59,21 @@
                 <svg heigth="80" width="80">
                     <circle cx="40" cy="40" r=35></circle>
                 </svg>
-                <a href="https://www.instagram.com/pacuino" target="_blanck"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.instagram.com/pacuino" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <div class="icon">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="40" r=35></circle>
+                </svg>
+                <a href="https://www.facebook.com/pacuino" target="_blank"><i class='bx bxl-facebook'></i></a>
             </div>
         </div>
     </section>
+    <!--Projects Section-->
     <section id="projects" class="projects-section">
         <h2 class="projects-title">Aqui algunos de mis proyectos</h2>
         <div class="projects-grid">
-            <a href="https://pacuino.github.io/encriptadorDeTexto-Alura/" class="project encriptador" target="_blank">
+            <a href="https://pacuino.github.io/encriptadorDeTexto-Alura/" class="project project-tile" target="_blank">
                 <img src="img/encriptador2.png" alt="Encriptador de Texto" class="project-image">
                 <p class="project-title">
                     <span class="code">&lt</span>
@@ -74,7 +81,7 @@
                     <span class="code">/&gt</span>
                 </p>
             </a>
-            <a href="https://pacuino.github.io/AkiraToriyama/" class="project akiratoriyama" target="_blank">
+            <a href="https://pacuino.github.io/AkiraToriyama/" class="project project-tile" target="_blank">
                 <img src="img/akiratoriyama2.png" alt="Akira Toriyama" class="project-image">
                 <p class="project-title">
                     <span class="code">&lt</span>
@@ -82,7 +89,7 @@
                     <span class="code">/&gt</span>
                 </p>
             </a>
-            <a href="https://pacuino.github.io/magazine-fCC/" class="project magazine" target="_blank">
+            <a href="https://pacuino.github.io/magazine-fCC/" class="project project-tile" target="_blank">
                 <img src="img/magazine2.png" alt="Magazine" class="project-image">
                 <p class="project-title">
                     <span class="code">&lt</span>
@@ -90,7 +97,7 @@
                     <span class="code">/&gt</span>
                 </p>
             </a>
-            <a href="https://pacuino.github.io/aluraPlay-Alura/" class="project aluraplay" target="_blank">
+            <a href="https://pacuino.github.io/aluraPlay-Alura/" class="project project-tile" target="_blank">
                 <img src="img/aluraplaypic2.png" alt="Alura Play" class="project-image">
                 <p class="project-title">
                     <span class="code">&lt</span>
@@ -98,7 +105,7 @@
                     <span class="code">/&gt</span>
                 </p>
             </a>
-            <a href="https://pacuino.github.io/workCultureSurvey-fCC/" class="project survey" target="_blank">
+            <a href="https://pacuino.github.io/workCultureSurvey-fCC/" class="project project-tile" target="_blank">
                 <img src="img/survey3-2.png" alt="Work Culture Survey" class="project-image">
                 <p class="project-title">
                     <span class="code">&lt</span>
@@ -106,7 +113,7 @@
                     <span class="code">/&gt</span>
                 </p>
             </a>
-            <a href="https://pacuino.github.io/techDoc-fCC/" class="project techdoc" target="_blank">
+            <a href="https://pacuino.github.io/techDoc-fCC/" class="project project-tile" target="_blank">
                 <img src="img/techdoc2.png" alt="Technical Documentation" class="project-image">
                 <p class="project-title">
                     <span class="code">&lt</span>
@@ -116,18 +123,75 @@
             </a>
         </div>
     </section>
+    <!--Contact Section-->
     <section id="contact" class="contact-section">
         <h2>Trabajemos juntos...</h2>
         <p>Como te tomas tu cafe?</p>
-        <div  class="contact-form">
-            <form class="contact-form-form" name="form">
-                <input class="contact-form-input" type="text" name="nombre" placeholder="Nombre">
-                <input class="contact-form-input" type="email" name="email" placeholder="E-mail">
-                <input class="contact-form-input" type="text" name="asunto" placeholder="Assunto">
-                <textarea class="contact-form-textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                <button type="submit" class="contact-form-btn">Enviar mensaje</button>
-            </form>            
+        <div class="contact">
+            <div class="contact-form-left">
+                <img class="contact-form-img" src="img/contact_image.png">
+            </div>
+            <div  class="contact-form">
+                <form id="form" class="contact-form-form" name="form">
+                    <div class="container">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <div class="container-input">
+                            <input id="username" class="contact-form-input" type="text" name="nombre" placeholder="Nombre" required>
+                            <i class='validacion-form bx bx-x-circle'></i>
+                        </div>
+                        <ul class="form-input-error">
+                            <li class="form-input-error-item">Este campo es obligatorio</li>
+                            <li class="form-input-error-item">Maximo 50 caracteres</li>
+                            <li class="form-input-error-item">Sin caracteres especiales</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <label for="email" class="form-label">Correo Electronico</label>
+                        <div class="container-input">
+                            <input id="email" class="contact-form-input" type="email" name="email" placeholder="e-mail" required>
+                            <i class='validacion-form bx bx-x-circle'></i>
+                        </div>
+                        <ul class="form-input-error">
+                            <li class="form-input-error-item">Este campo es obligatorio</li>
+                            <li class="form-input-error-item">Deber estar en formato e-mail conteniendo el caracter especial @ seguido de un dominio o proveedor seguido de un punto(.)</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <label for="asunto" class="form-label">Asunto</label>
+                        <div class="container-input">
+                            <input id="asunto" class="contact-form-input" type="text" name="asunto" placeholder="Asunto">
+                            <i class='validacion-form bx bx-x-circle'></i>
+                        </div>
+                        <ul class="form-input-error">
+                            <li class="form-input-error-item">Este campo es obligatorio</li>
+                            <li class="form-input-error-item">Maximo 50 caracteres</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <div class="container-input">
+                             <textarea class="contact-form-textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                             <i class='validacion-form textareaform bx bx-x-circle'></i>
+                        </div>
+                        <ul class="form-input-error">
+                            <li class="form-input-error-item">Este campo es obligatorio</li>
+                            <li class="form-input-error-item">Maximo 300 caracteres</li>
+                        </ul>
+                    </div>
+                    <div class="form-mensaje">
+                        <p id="form-mensaje-error" class="form-input-error-item"><i class='validacion-form bx bx-error'></i> <strong>Error</strong>Rellene el formulario correctamente</p>
+                    </div>
+                    <button id="submit" type="submit" class="contact-form-btn">Enviar mensaje</button>
+                    <div class="form-mensaje">
+                        <p id="form-mensaje-exito" class="form-input-error-item">El formulario se envio correctamente</p>
+                    </div>
+                </form>            
+            </div>
         </div>
     </section>
+    <!--Footer-->
+    <footer>
+        <p>Portafolio 2024</p>
+    </footer>
 </body>
 </html>

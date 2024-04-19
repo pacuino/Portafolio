@@ -1,0 +1,66 @@
+/*Inicia Estilos Barra de Navegacion*/
+
+.nav {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+
+.nav_list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.titulo {
+    display: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.nav_list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+li:hover {
+    background-color: var(--main-blue);
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+    /* Menú */
+    .titulo {
+        display: block;
+        justify-content: center;
+        font-size: 2.8rem;
+        padding: 2rem;
+    }
+    .nav {
+        justify-content: center;
+    }
+
+    .nav_list {
+        display: none;
+    }
+}

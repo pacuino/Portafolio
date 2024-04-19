@@ -1,0 +1,113 @@
+@import url(css/reset.css);
+@import url(css/menu.css);
+@import url(css/welcome.css);
+@import url(css/projects.css);
+@import url(css/contact.css);
+@import url(css/footer.css);
+
+/*Inicia Estilos Generales*/
+:root {
+    --main-black: #000;
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-gray: #303841;
+    --main-blue: #45567d;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: block;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+    /* Menú */
+    .titulo {
+        display: block;
+        justify-content: center;
+        font-size: 2.8rem;
+        padding: 2rem;
+    }
+    .nav {
+        justify-content: center;
+    }
+
+    .nav_list {
+        display: none;
+    }
+    /*title*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+    
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+    /*Contacto*/
+    .contact-form-left {
+        display: none;
+    }
+
+    }
+    
+    /*Mobile*/
+    @media (max-width: 425px) {
+    
+    /*Menu*/
+    
+    /*Titulo*/
+    
+    /*Sección sobre mi*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+     
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+     /*Contacto*/
+    .contact-form-left {
+        display: none;
+    }
+    /*Footer*/
+    
+    }
