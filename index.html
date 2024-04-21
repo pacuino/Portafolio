@@ -20,8 +20,8 @@
                     <li class="nav_list_item"><a href="#skills">Skills</a></li>
                     <li class="nav_list_item"><a href="#hobbies">Hobbies</a></li>
                     <li class="nav_list_item"><a href="#formacion">Formación</a></li>
-                    <li class="nav_list_item"><a href="#projects">Proyectos</a></li>
-                    <li class="nav_list_item"><a href="#contact">Contacto</a></li>
+                    <li class="nav_list_item"><a href="#projects-section">Proyectos</a></li>
+                    <li class="nav_list_item"><a href="#contact-section">Contacto</a></li>
                 </ul>    
             </nav>
         </div>
@@ -70,7 +70,7 @@
         </div>
     </section>
     <!--Projects Section-->
-    <section id="projects" class="projects-section">
+    <section id="projects-section" class="projects-section">
         <h2 class="projects-title">Aqui algunos de mis proyectos</h2>
         <div class="projects-grid">
             <a href="https://pacuino.github.io/encriptadorDeTexto-Alura/" class="project project-tile" target="_blank">
@@ -124,19 +124,19 @@
         </div>
     </section>
     <!--Contact Section-->
-    <section id="contact" class="contact-section">
+    <section id="contact-section" class="contact-section">
         <h2>Trabajemos juntos...</h2>
         <p>Como te tomas tu cafe?</p>
         <div class="contact">
-            <div class="contact-form-left">
-                <img class="contact-form-img" src="img/contact_image.png">
+            <div class="contact-left">
+                <img class="contact-left-img" src="img/contact_image.png">
             </div>
             <div  class="contact-form">
-                <form id="form" class="contact-form-form" name="form">
-                    <div class="container">
+                <form id="form" class="form" name="form">
+                    <div class="form-group">
                         <label for="nombre" class="form-label">Nombre</label>
-                        <div class="container-input">
-                            <input id="username" class="contact-form-input" type="text" name="nombre" placeholder="Nombre" required>
+                        <div class="form-group-input">
+                            <input id="username" class="form-input" type="text" name="nombre" placeholder="Nombre" required>
                             <i class='validacion-form bx bx-x-circle'></i>
                         </div>
                         <ul class="form-input-error">
@@ -145,10 +145,10 @@
                             <li class="form-input-error-item">Sin caracteres especiales</li>
                         </ul>
                     </div>
-                    <div class="container">
+                    <div class="form-group">
                         <label for="email" class="form-label">Correo Electronico</label>
-                        <div class="container-input">
-                            <input id="email" class="contact-form-input" type="email" name="email" placeholder="e-mail" required>
+                        <div class="form-group-input">
+                            <input id="email" class="form-input" type="email" name="email" placeholder="e-mail" required>
                             <i class='validacion-form bx bx-x-circle'></i>
                         </div>
                         <ul class="form-input-error">
@@ -156,10 +156,10 @@
                             <li class="form-input-error-item">Deber estar en formato e-mail conteniendo el caracter especial @ seguido de un dominio o proveedor seguido de un punto(.)</li>
                         </ul>
                     </div>
-                    <div class="container">
+                    <div class="form-group">
                         <label for="asunto" class="form-label">Asunto</label>
-                        <div class="container-input">
-                            <input id="asunto" class="contact-form-input" type="text" name="asunto" placeholder="Asunto">
+                        <div class="form-group-input">
+                            <input id="asunto" class="form-input" type="text" name="asunto" placeholder="Asunto">
                             <i class='validacion-form bx bx-x-circle'></i>
                         </div>
                         <ul class="form-input-error">
@@ -167,10 +167,10 @@
                             <li class="form-input-error-item">Maximo 50 caracteres</li>
                         </ul>
                     </div>
-                    <div class="container">
+                    <div class="form-group">
                         <label for="mensaje" class="form-label">Mensaje</label>
-                        <div class="container-input">
-                             <textarea class="contact-form-textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <div class="form-group-input">
+                             <textarea class="form-textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
                              <i class='validacion-form textareaform bx bx-x-circle'></i>
                         </div>
                         <ul class="form-input-error">
@@ -179,11 +179,13 @@
                         </ul>
                     </div>
                     <div class="form-mensaje">
-                        <p id="form-mensaje-error" class="form-input-error-item"><i class='validacion-form bx bx-error'></i> <strong>Error</strong>Rellene el formulario correctamente</p>
+                        <p id="form-mensaje-error" class="form-mensaje-error">
+                            <span><i class= 'bx bxs-error'>
+                            </i> Error</span> Rellene el formulario correctamente</p>
                     </div>
-                    <button id="submit" type="submit" class="contact-form-btn">Enviar mensaje</button>
+                    <button id="submit" type="submit" class="submit">Enviar mensaje</button>
                     <div class="form-mensaje">
-                        <p id="form-mensaje-exito" class="form-input-error-item">El formulario se envio correctamente</p>
+                        <p id="form-mensaje-exito" class="form-mensaje-exito">El formulario se envio correctamente</p>
                     </div>
                 </form>            
             </div>
@@ -193,5 +195,6 @@
     <footer>
         <p>Portafolio 2024</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
