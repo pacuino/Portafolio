@@ -23,6 +23,7 @@
     margin-top: 5rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 28px;
 }
 
@@ -82,7 +83,6 @@
     position: absolute;
     right: 10px;
     bottom: 15px;
-    color: red;
     font-size: 2.5rem;
     z-index: 100;
     opacity: 0;
@@ -135,20 +135,64 @@
     transition: 300ms;
 }
 
+.form-mensaje{
+    display: none;
+    color: var(--main-black);
+}
+
 .form-mensaje-error {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+    line-height: 2rem;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--validation-red);
-    height: 5vh;
-    line-height: 2rem;
-    background: var(--validation-red);
     border-radius: 4px;
-    color: var(--main-black);
+    height: 5vh;
+    background: var(--validation-red);
 }
 
+.form-mensaje-error-activo{
+    display: block;
+}
+
+.form-mensaje-exito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 4px;
+    height: 5vh;
+    background: var(--validation-green);
+}
+
+.form-mensaje-exito-activo{
+    display: block;
+}
+
+/*Estilos para Validación*/
+
+.form-group-correcto .validacion-form{
+    color: var(--validation-green);
+    opacity: 1;
+}
+
+.form-group-incorrecto .form-label{
+    color: var(--validation-red);
+}
+
+.form-group-incorrecto .validacion-form{
+    color: var(--validation-red);
+    opacity: 1;
+}
+
+.form-group-incorrecto .form-input{
+    border: 3px solid var(--validation-red);
+}
 
 /*Tablet*/
 @media (max-width: 768px) {
