@@ -132,12 +132,15 @@
                 <img class="contact-left-img" src="img/contact_image.png">
             </div>
             <div  class="contact-form">
-                <form id="form" class="form" name="form">
-                    <div id="nombre-group" class="form-group">
+                <!--Formulario-->
+                <form action="" id="form" class="form" >
+
+                    <!--Grupo Nombre-->
+                    <div id="form-nombre" class="form-group">
                         <label for="nombre" class="form-label">Nombre</label>
                         <div class="form-group-input">
                             <input id="nombre" class="form-input" type="text" name="nombre" placeholder="Nombre" required>
-                            <i class='validacion-form bx bx-x-circle'></i>
+                            <i class='validacion-form fas fa-times-circle'></i>
                         </div>
                         <ul class="form-input-error">
                             <li class="form-input-error-item">Este campo es obligatorio</li>
@@ -145,49 +148,59 @@
                             <li class="form-input-error-item">Sin caracteres especiales</li>
                         </ul>
                     </div>
-                    <div id="email-group" class="form-group">
+
+                    <!--Correo Electronico-->
+                    <div id="form-email" class="form-group">
                         <label for="email" class="form-label">Correo Electronico</label>
                         <div class="form-group-input">
                             <input id="email" class="form-input" type="email" name="email" placeholder="e-mail" required>
-                            <i class='validacion-form bx bx-x-circle'></i>
+                            <i class='validacion-form fas fa-times-circle'></i>
                         </div>
                         <ul class="form-input-error">
                             <li class="form-input-error-item">Este campo es obligatorio</li>
                             <li class="form-input-error-item">Deber estar en formato e-mail conteniendo el caracter especial @ seguido de un dominio o proveedor seguido de un punto(.)</li>
                         </ul>
                     </div>
-                    <div id="asunto-group" class="form-group">
+
+                    <!--Asunto-->
+                    <div id="form-asunto" class="form-group">
                         <label for="asunto" class="form-label">Asunto</label>
                         <div class="form-group-input">
                             <input id="asunto" class="form-input" type="text" name="asunto" placeholder="Asunto">
-                            <i class='validacion-form bx bx-x-circle'></i>
+                            <i class='validacion-form fas fa-times-circle'></i>
                         </div>
                         <ul class="form-input-error">
                             <li class="form-input-error-item">Este campo es obligatorio</li>
                             <li class="form-input-error-item">Maximo 50 caracteres</li>
                         </ul>
                     </div>
-                    <div class="form-group">
+
+                    <!--Mensaje-->
+                    <div id="form-mensaje" class="form-group">
                         <label for="mensaje" class="form-label">Mensaje</label>
-                        <div id="mensaje-group" class="form-group-input">
+                        <div  class="form-group-input">
                              <textarea class="form-textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                             <i class='validacion-form textareaform bx bx-x-circle'></i>
+                             <i class='validacion-form textareaform fas fa-times-circle'></i>
                         </div>
                         <ul class="form-input-error">
                             <li class="form-input-error-item">Este campo es obligatorio</li>
                             <li class="form-input-error-item">Maximo 300 caracteres</li>
                         </ul>
                     </div>
-                    <div class="form-mensaje">
-                        <p id="form-mensaje-error" class="form-mensaje-error">
-                            <span><i class= 'bx bxs-error'>
-                            </i>Error</span>Rellene el formulario correctamente</p>
+
+                    <!--Mensaje Error-->
+                    <div class="form-mensaje-alerta" id="form-mensaje-alerta">
+                        <p>
+                            <i class= 'fas fa-exclamation-triangle'>
+                            </i><b>Alerta</b>Rellene el formulario correctamente</p>
                     </div>
-                    <button id="submit" type="submit" class="submit">Enviar mensaje</button>
-                    <div class="form-mensaje">
+                    
+                    <!--Grupo Boton-->
+                    <div class="form-boton" id="form-boton">
+                        <button id="submit" type="submit" class="submit">Enviar mensaje</button>
                         <p id="form-mensaje-exito" class="form-mensaje-exito">El formulario se envio correctamente</p>
                     </div>
-                </form>            
+                </form>           
             </div>
         </div>
     </section>
@@ -196,5 +209,6 @@
         <p>Portafolio 2024</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
