@@ -30,7 +30,9 @@
 .contact-left-img {
     width: 232px;
     height: 297px;
+    object-fit: contain;
     border-radius: 5px;
+    
 }
 
 .contact-form {
@@ -50,10 +52,6 @@
     position: relative;
 }
 
-.form-group-input {
-
-}
-
 .form-input {
     width: 100%;
     height: 5vh;
@@ -67,7 +65,7 @@
 }
 
 .form-input:focus{
-    border: 3px solid #0075FF;
+    border: 3px solid var(--edit-input);
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
@@ -113,7 +111,7 @@
 }
 
 .form-textarea:focus{
-    border: 3px solid #0075FF;
+    outline: 3px solid var(--edit-input);
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
@@ -203,8 +201,14 @@
     opacity: 1;
 }
 
+.form-group-incorrecto .form-textarea{
+    outline: 3px solid var(--validation-red);
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
 .form-group-incorrecto .form-input{
     border: 3px solid var(--validation-red);
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
 /*Tablet*/
